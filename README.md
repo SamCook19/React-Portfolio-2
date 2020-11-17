@@ -1,1 +1,2 @@
-React Portfolio Project, new file to push to heroku.
+# Sam Cook React Portfolio Project
+

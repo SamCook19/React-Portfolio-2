@@ -28,7 +28,7 @@ export default function() {
               <FontAwesomeIcon icon="envelope" />
             </div>
 
-            <div className="text">sam.cook@suusuccess.org</div>
+            <div className="text">samcookcoding@gmail.com</div>
           </div>
 
           <div className="bullet-point-group">
@@ -36,7 +36,7 @@ export default function() {
               <FontAwesomeIcon icon="map-marked-alt" />
             </div>
 
-            <div className="text">Cedar City, UT</div>
+            <div className="text">Eugene, OR</div>
           </div>
         </div>
       </div>

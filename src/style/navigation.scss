@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    background-color: #dad7cd;
   
     .right-side {
       a {
@@ -29,7 +30,7 @@
       font-size: 0.9rem;
   
       a {
-        color: $grey;
+        color: $dark-green;
         text-decoration: none;
         &:hover {
           color: black;

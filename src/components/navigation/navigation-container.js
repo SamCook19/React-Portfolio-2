@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { withRouter } from "react-router";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const NavigationComponent = props => {
   const dynamicLink = (route, linkText) => {
@@ -49,6 +49,14 @@ const NavigationComponent = props => {
           <NavLink to="/contact" activeClassName="nav-link-active">
             Contact
           </NavLink>
+        </div>
+
+        <div className="nav-link-wrapper">
+          
+          <a href="https://www.ziprecruiter.com/profile/view/resume" activeClassName="nav-link-active">
+            Resume
+          </a>
+          
         </div>
 
         {props.loggedInStatus === "LOGGED_IN" ? (

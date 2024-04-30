@@ -57,7 +57,7 @@ div.filepicker {
   border-width: 11px 0 0 11px;
   border-style: solid;
   border-color: white transparent transparent #920035;
-}@-webkit-keyframes passing-through {
+}@keyframes passing-through {
   0% {
     opacity: 0;
     transform: translateY(40px);
@@ -69,30 +69,6 @@ div.filepicker {
   100% {
     opacity: 0;
     transform: translateY(-40px);
-  }
-}
-@keyframes passing-through {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  30%, 70% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-}
-@-webkit-keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  30% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
 @keyframes slide-in {
@@ -103,17 +79,6 @@ div.filepicker {
   30% {
     opacity: 1;
     transform: translateY(0px);
-  }
-}
-@-webkit-keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  10% {
-    transform: scale(1.1);
-  }
-  20% {
-    transform: scale(1);
   }
 }
 @keyframes pulse {
@@ -134,7 +99,7 @@ div.filepicker {
 .dropzone {
   min-height: 150px;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  background: white;
+  background: #fff;
   padding: 20px 20px;
 }
 
@@ -204,7 +169,7 @@ div.filepicker {
 }
 
 .dropzone .dz-preview.dz-image-preview {
-  background: white;
+  background: #fff;
 }
 
 .dropzone .dz-preview.dz-image-preview .dz-details {
@@ -291,13 +256,11 @@ div.filepicker {
 }
 
 .dropzone .dz-preview.dz-success .dz-success-mark {
-  -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
   animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .dropzone .dz-preview.dz-error .dz-error-mark {
   opacity: 1;
-  -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
   animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -330,7 +293,6 @@ div.filepicker {
 }
 
 .dropzone .dz-preview:not(.dz-processing) .dz-progress {
-  -webkit-animation: pulse 6s ease infinite;
   animation: pulse 6s ease infinite;
 }
 
@@ -387,7 +349,7 @@ div.filepicker {
   background: #be2626;
   background: linear-gradient(to bottom, #be2626, #a92222);
   padding: 0.5em 1.2em;
-  color: white;
+  color: #fff;
 }
 
 .dropzone .dz-preview .dz-error-message:after {
@@ -489,7 +451,7 @@ textarea {
   font-weight: 500;
   border: 1px solid transparent;
   transition: all 0.5s ease-in-out;
-  background-color: #26bfd4;
+  background-color: #588157;
   color: white;
   font-family: "Castoro", serif;
 }
@@ -497,7 +459,7 @@ textarea {
   outline: none;
 }
 .btn:hover {
-  background-color: #207b88;
+  background-color: #3a5a40;
 }
 
 .one-column {
@@ -516,6 +478,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  background-color: #dad7cd;
 }
 .nav-wrapper .right-side a {
   margin-left: 15px;
@@ -538,7 +501,7 @@ textarea {
   font-size: 0.9rem;
 }
 .nav-wrapper .nav-link-wrapper a {
-  color: #8a8a8a;
+  color: #3a5a40;
   text-decoration: none;
 }
 .nav-wrapper .nav-link-wrapper a:hover {
@@ -1374,27 +1337,15 @@ textarea {
   background-color: #333;
   border-radius: 100%;
   display: inline-block;
-  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
 .rdw-spinner .rdw-bounce1 {
-  -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
 .rdw-spinner .rdw-bounce2 {
-  -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
-}
-
-@-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-    -webkit-transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-  }
 }
 @keyframes sk-bouncedelay {
   0%, 80%, 100% {
@@ -1744,7 +1695,6 @@ textarea {
   margin-bottom: 5px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -1769,9 +1719,7 @@ textarea {
   background: #f1f1f1;
   border-radius: 3px;
   padding: 1px 10px;
-}
-
-/**
+} /**
 * Draft v0.9.1
 *
 * Copyright (c) 2013-present, Facebook, Inc.
@@ -2096,4 +2044,4 @@ textarea {
 .homepage-wrapper .filter-links .btn {
   width: 100%;
 }
-/*# sourceMappingURL=app-38c1b6b396421ac55843.map*/
+/*# sourceMappingURL=app-d528583ed893f405d7b3.map*/
